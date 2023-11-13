@@ -1,38 +1,283 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden;  */
+}
+body{
+  max-width: 100%;
+  max-height: auto;
+}
+.custom-box{
+  box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+  margin-top: auto;
+}
+#backimage{
+  background-image: url('./images/yellow.jpeg');
+background-size: cover; 
+background-position: center center; 
+background-repeat: no-repeat; 
+height: 100vh; 
+width: 100%;
+}
+#backimg{
+  background-image: url('./images/puple.jpeg');
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  width: 100%;
+}
+
+
+
+#text-slide1{
+  width: 1100px;
+  margin: 0 auto;
+  color: white;
+}
+#text-slide2{
+  width: 1200px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+
+}
+
+#text-slide2 {
+  padding-top: 5rem;
+  text-align: center;
+}
+#text-slide1{
+  padding-top: 2rem;
+}
+ .text-class h6 {
+  font-size: 2rem;
+}
+
+
+.text-class h1 {
+  font-size: 6rem;
+}
+.money{
+  font-size: 7rem;
+
+}
+.money-1{
+  color: #2D3A4B;
+
+}
+.text-class h5 {
+font-size: 3rem;
+}
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
+  background-color: #007bff; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+/* Button styles */
+.shop-1 {
+width: 170px;
+height: 50px;
+  border: none;
+  background-color: #2D3A4B;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.shop-12 {
+width: 170px;
+height: 50px;
+  border: none;
+  background-color: #2D3A4B;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.shop-1:hover {
+  background-color: #fff;
+  color: #C48386;
+  border-color: #fff;
+}
+
+.shopping-1 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding-top: 10rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+
+
+}
+
+.shopping-2 {
+  text-align: center;
+
+}
+
+.shopping-2 h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  width: 18rem;
+  background-color: #2D3A4B;
+
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link-unstyled {
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.link-unstyled:hover {
+  text-decoration: none;
+  color: inherit;
+}
+/* Footer.css */
+.sectionStyle1 {
+  background-color: #131920;
+  color: #949494;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 100%;
+  text-align: center;
+}
+.card-p{
+  padding-top: 150px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.buttonStyle {
+  background-color: #131920;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+}
+
+.sectionStyle2 {
+  background-color: #171E27;
+  color: #949494;
+  padding-top: 5rem;
+  font-family: 'titleFont';
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+/* Default styles for all screen sizes */
+/* Add your default CSS rules here */
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  body {
+    /* Modify styles for smaller screens */
+    max-width: 100%;
+    /* font-size: 10px; */
+    /* Add your responsive CSS rules here */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .text-class{
+    padding-top:100px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #text-slide1 {
+    /* Modify styles for smaller screens */
+    width: 90%;
+    text-align: center;
+    padding-top: 120px;
+    
   }
+
+  #text-slide2 {
+    width: 90%;
+    padding-top:40px;
+  }
+  .text-class h6 {
+    font-size: 5rem; /* Adjust the font size as needed */
+  }
+
+  .text-class h1 {
+    font-size: 10rem; /* Adjust the font size as needed */
+  }
+
+  .money {
+    font-size: 5rem; /* Adjust the font size as needed */
+  }
+
+  .text-class h5 {
+    font-size: 4rem; /* Adjust the font size as needed */
+  }
+
+  /* Add more responsive styles as needed */
 }
+
+/* Media query for screens with a maximum width of 576px (typical smartphones) */
+@media (max-width: 576px) {
+  body {
+max-width: 100%;
+/* font-size: 10px; */
+
+  }
+
+  #text-slide1 {
+max-width:80% ;
+  }
+
+  #text-slide2 {
+    max-width:80% ;
+
+  }  .text-class h6 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+
+  .text-class h1 {
+    font-size: 4rem; /* Adjust the font size as needed */
+  }
+
+  .money {
+    font-size: 5rem; /* Adjust the font size as needed */
+  }
+
+  .text-class h5 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
