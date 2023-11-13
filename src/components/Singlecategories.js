@@ -1,16 +1,19 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import ProductsTemp from "./Productcard";
+import React from "react";
 import Singleproduct from "./Singlecategoryp";
 
-const SingleCategory = ({cats}) => {
+const SingleCategory = ({ cats }) => {
+  // Check if 'cats' is not undefined and has at least one element
+  if (!cats || cats.length === 0) {
+    return <p>No category data available</p>;
+  }
 
-    const categories = cats[0];
+  const categories = cats[0];
 
-    return ( 
-        <div className="bigproduct">
-           <Singleproduct productcat={categories} />
-        </div>
-     );
-}
- 
+  return (
+    <div className="bigproduct">
+      <Singleproduct productcat={categories} />
+    </div>
+  );
+};
+
 export default SingleCategory;

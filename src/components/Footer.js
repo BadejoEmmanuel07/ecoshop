@@ -32,41 +32,43 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="sectionStyle2">
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', maxWidth: "1200px", margin: "0 auto" }}>
-          <img className="w-12" src={LastEco} alt="LastEco" style={{width: "150px"}} />
-          <p>Street No. 12, Newyork 12,</p>
-          <p>MD - 123, USA.</p>
-          <p>1.800.123.456789</p>
-          <p>info@ecoshop.com</p>
+     <div className="sectionStyle2" style={{ display: 'grid', padding:"30px", gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', gap: '2rem', maxWidth: '100%', margin: '0 auto' }}>
+     <div>
+       <img className="w-12" src={LastEco} alt="LastEco" style={{ width: '150px' }} />
+       <p>Street No. 12, Newyork 12,</p>
+       <p>MD - 123, USA.</p>
+       <p>1.800.123.456789</p>
+       <p>info@ecoshop.com</p>
+     </div>
+     <div style={{ gap: '1rem' }}>
+       <h3 style={{ color: '#ffffff', fontSize: '17px' }}>HELPFUL LINKS</h3>
+       <p>Products</p>
+       <p>Find a Store</p>
+       <p>Features</p>
+       <p>Privacy Policy</p>
+       <p>Blog</p>
+       <p>Press Kit</p>
+     </div>
+     <div style={{ gap: '1.5rem' }}>
+       <h3 style={{ color: '#ffffff', fontSize: '17px' }}>SHOP</h3>
+       <p>About Us</p>
+       <p>Career</p>
+       <p>Shipping Methods</p>
+       <p>Contact</p>
+       <p>Support</p>
+       <p>Retailer</p>
+     </div>
+     <div style={{ gap: '1rem' }}>
+       <h3 style={{ color: '#ffffff', fontSize: '17px' }}>MY ACCOUNT</h3>
+       <p>Login</p>
+       <p>My Account</p>
+       <p>My Cart</p>
+       <p>Wishlist</p>
+       <p>Checkout</p>
+     </div>
+   </div>
+      
         </div>
-        <div style={{ gap: '1rem' }}>
-          <h3 style={{ color: '#ffffff', fontSize: "17px" }}>HELPFUL LINKS</h3>
-          <p>Products</p>
-          <p>Find a Store</p>
-          <p>Features</p>
-          <p>Privacy Policy</p>
-          <p>Blog</p>
-          <p>Press Kit</p>
-        </div>
-        <div style={{ gap: '1.5rem' }}>
-          <h3 style={{ color: '#ffffff', fontSize: "17px" }}>SHOP</h3>
-          <p>About Us</p>
-          <p>Career</p>
-          <p>Shipping Methods</p>
-          <p>Contact</p>
-          <p>Support</p>
-          <p>Retailer</p>
-        </div>
-        <div style={{ gap: '1rem' }}>
-          <h3 style={{ color: '#ffffff', fontSize: "17px" }}>MY ACCOUNT</h3>
-          <p>Login</p>
-          <p>My Account</p>
-          <p>My Cart</p>
-          <p>Wishlist</p>
-          <p>Checkout</p>
-        </div>
-      </div>      </div>
   );
 };
 

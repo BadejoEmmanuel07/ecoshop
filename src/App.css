@@ -174,7 +174,7 @@ height: 50px;
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 0.05em;
-  border-radius: 9999px;
+  border-radius: 9px;
 }
 
 .sectionStyle2 {
@@ -228,6 +228,20 @@ height: 50px;
   .text-class h5 {
     font-size: 4rem; /* Adjust the font size as needed */
   }
+  .sectionStyle1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .sectionStyle2 {
+    grid-template-columns: 4fr; /* Single column layout */
+  }
+  .sectionStyle2 > div {
+    grid-column: span 4; /* Adjust grid span for individual grid items */
+  }
+  table {
+    font-size: 14px;
+    width: 50%;
+  }
 
   /* Add more responsive styles as needed */
 }
@@ -261,6 +275,16 @@ max-width:80% ;
 
   .text-class h5 {
     font-size: 2.5rem; /* Adjust the font size as needed */
+  }
+  .sectionStyle2 {
+    grid-template-columns: 4fr; /* Single column layout */
+  }
+  .sectionStyle2 > div {
+    grid-column: span 4; /* Adjust grid span for individual grid items */
+  }
+  table {
+    font-size: 14px;
+    width: 70%;
   }
 
 }

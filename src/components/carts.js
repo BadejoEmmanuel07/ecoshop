@@ -1,3 +1,5 @@
+
+import React from "react";
 import { useCart } from "react-use-cart";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -25,7 +27,7 @@ const Carts = () => {
             {" "}
             Your Cart ({totalUniqueItems}) Total items({totalItems})
           </h5>
-          <table className="table t able-light">
+          <table className="table table-light">
             <tbody>
               {items.map((item, index) => {
                 return (
@@ -38,15 +40,27 @@ const Carts = () => {
                     <td> $ {item.price} </td>
                     <td> Quantity ({item.quantity}) </td>
                     <td>
-                        <button style={{margin:'5px' , backgroundColor: "#2D3A4B",  color: "white"}} className="btn btn ms-2"
-                        onClick={() => updateItemQuantity(item.id, item.quantity -1)}
-                        >-</button>
-                        <button style={{margin:'5px', backgroundColor: "#2D3A4B",  color: "white"}} className="btn  ms-2"
-                        onClick={() => updateItemQuantity(item.id, item.quantity +1)}
-                        >+</button>
-                        <button style={{margin:'5px', backgroundColor: "#2D3A4B", color: "white"}} className="btn  ms-2"
+                      <button
+                        style={{ margin: "5px", backgroundColor: "#2D3A4B", color: "white" }}
+                        className="btn btn ms-2"
+                        onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
+                      >
+                        -
+                      </button>
+                      <button
+                        style={{ margin: "5px", backgroundColor: "#2D3A4B", color: "white" }}
+                        className="btn  ms-2"
+                        onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
+                      >
+                        +
+                      </button>
+                      <button
+                        style={{ margin: "5px", backgroundColor: "#2D3A4B", color: "white" }}
+                        className="btn  ms-2"
                         onClick={() => removeItem(item.id)}
-                        >Remove Item</button>
+                      >
+                        Remove Item
+                      </button>
                     </td>
                   </tr>
                 );
@@ -54,15 +68,14 @@ const Carts = () => {
             </tbody>
           </table>
         </div>
-        <div className="col-auto ms-auto" >
-              <h2 style={{margin:'10px'}}> Total Price: $ {cartTotal} </h2>
-        </div>    
+        <div className="col-auto ms-auto">
+          <h2 style={{ margin: "10px" }}> Total Price: $ {cartTotal} </h2>
+        </div>
 
         <div className="col-auto">
-            <button className="btn " style={{backgroundColor: "#2D3A4B",  color: "white"}} onClick={emptyCart}>
-              Clear Cart
-            </button>
-
+          <button className="btn " style={{ backgroundColor: "#2D3A4B", color: "white" }} onClick={emptyCart}>
+            Clear Cart
+          </button>
         </div>
       </div>
     </section>
