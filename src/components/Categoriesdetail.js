@@ -1,19 +1,20 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-const Catcard = ({ Catcard }) => {
+function CategoriesList({ categories }) {
   return (
-    <div className="container mt-4">
-      <div className="row">
-        {Catcard.map((data, index) => (
-          <div key={index} className="col-md-4 mb-4">
-            <Link to={`/products/categories/${data}`}>
-              <button className="shop-1">{data}</button>
-            </Link>
+    <div className="container d-flex flex-wrap justify-content-around">
+      {categories.map((item, index) => {
+        return (
+          <div key={index}>
+            <button className="shop-1 m-3">
+            {item}
+            </button>
           </div>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
-};
+}
 
-export default Catcard;
+export default CategoriesList;

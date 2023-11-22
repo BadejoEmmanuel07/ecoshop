@@ -73,15 +73,14 @@ width: 100%;
 font-size: 3rem;
 }
 .swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
-  background-color: #007bff; /* Change to your desired background color */
-  color: #fff; /* Change to your desired text color */
+  background-color: #007bff; 
+  color: #fff; 
   border-radius: 50%;
   padding: 10px;
   font-size: 18px;
 }
 
 
-/* Button styles */
 .shop-1 {
 width: 170px;
 height: 50px;
@@ -186,23 +185,20 @@ height: 50px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-/* Default styles for all screen sizes */
-/* Add your default CSS rules here */
+
 
 /* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
   body {
-    /* Modify styles for smaller screens */
+ 
     max-width: 100%;
-    /* font-size: 10px; */
-    /* Add your responsive CSS rules here */
+   
   }
   .text-class{
     padding-top:100px;
   }
 
   #text-slide1 {
-    /* Modify styles for smaller screens */
     width: 90%;
     text-align: center;
     padding-top: 120px;
@@ -214,43 +210,41 @@ height: 50px;
     padding-top:40px;
   }
   .text-class h6 {
-    font-size: 5rem; /* Adjust the font size as needed */
+    font-size: 5rem; 
   }
 
   .text-class h1 {
-    font-size: 10rem; /* Adjust the font size as needed */
+    font-size: 10rem; 
   }
 
   .money {
-    font-size: 5rem; /* Adjust the font size as needed */
+    font-size: 5rem; 
   }
 
   .text-class h5 {
-    font-size: 4rem; /* Adjust the font size as needed */
+    font-size: 4rem; 
   }
   .sectionStyle1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
   .sectionStyle2 {
-    grid-template-columns: 4fr; /* Single column layout */
+    grid-template-columns: 4fr;
   }
   .sectionStyle2 > div {
-    grid-column: span 4; /* Adjust grid span for individual grid items */
+    grid-column: span 4; 
   }
   table {
     font-size: 14px;
     width: 50%;
   }
 
-  /* Add more responsive styles as needed */
 }
 
 /* Media query for screens with a maximum width of 576px (typical smartphones) */
 @media (max-width: 576px) {
   body {
 max-width: 100%;
-/* font-size: 10px; */
 
   }
 
@@ -262,25 +256,25 @@ max-width:80% ;
     max-width:80% ;
 
   }  .text-class h6 {
-    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-size: 1.5rem; 
   }
 
   .text-class h1 {
-    font-size: 4rem; /* Adjust the font size as needed */
+    font-size: 4rem; 
   }
 
   .money {
-    font-size: 5rem; /* Adjust the font size as needed */
+    font-size: 5rem; 
   }
 
   .text-class h5 {
-    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-size: 2.5rem; 
   }
   .sectionStyle2 {
-    grid-template-columns: 4fr; /* Single column layout */
+    grid-template-columns: 4fr; 
   }
   .sectionStyle2 > div {
-    grid-column: span 4; /* Adjust grid span for individual grid items */
+    grid-column: span 4;
   }
   table {
     font-size: 14px;

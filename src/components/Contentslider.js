@@ -1,24 +1,24 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Scrollbar, EffectFlip, Autoplay } from 'swiper/modules';
+import { Pagination, Navigation, Scrollbar, EffectFlip, Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 import { Link } from 'react-router-dom';
 
 const ContentSlider = () => {
-  const isSmallScreen = window.innerWidth <= 767; // Adjust the breakpoint as needed
+  const isSmallScreen = window.innerWidth <= 767;
 
   return (
     <Swiper
-      modules={[Pagination, Scrollbar, EffectFlip, Autoplay]}
+      modules={[Pagination, Navigation, Scrollbar, EffectFlip, Autoplay]}
       spaceBetween={50}
       slidesPerView={1}
-      navigation={!isSmallScreen} // Show navigation only for larger screens
+      navigation={!isSmallScreen} 
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       effect="flip"
-      autoplay={{ delay: 300000 }} // Autoplay every 5 minutes
-      loop={true} // Add the loop property to enable continuous looping
+      autoplay={{ delay: 250000 }} 
+      loop={true} 
     >
       <SwiperSlide>
         <div className="relative" id="backimage">

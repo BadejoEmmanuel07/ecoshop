@@ -1,6 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Singleproduct from "./Singleproducts";
-import ProductsTemp from "./Productcard";
 
 const Singleproductspage  = () => {
 

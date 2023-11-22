@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { CartProvider, useCart } from "react-use-cart";
 
-const ProductsTemp = ({ prod }) => {
+const Productcard = ({ prod }) => {
   const { addItem } = useCart();
 
   return (
@@ -55,4 +55,4 @@ const ProductsTemp = ({ prod }) => {
   );
 };
 
-export default ProductsTemp;
+export default Productcard;

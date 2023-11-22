@@ -5,12 +5,12 @@ import Header from "./components/Header";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Products from "./components/Products";
 import Categories from "./components/Categories";
-import Categoriespage, { loadingCats } from './components/Categoriespage';
 import Singleproductspage, { loadingproducts } from './components/Singleproductsdetail';
-import Carts from "./components/carts";
+import Cart from "./components/Cart";
 import Home from './components/Home';
 import Footer from "./components/Footer";
 import Search from "./components/Search"
+import List from "./components/List"
 
 
 
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/cart',
-        element: <Carts />
+        element: <Cart />
       },
       {
         path: '/products/:id',
@@ -52,9 +52,10 @@ const router = createBrowserRouter([
         loader: loadingproducts
       },
       {
-        path: '/products/categories/:item',
-        element: <Categoriespage />,
-      }
+        path: '/list',
+        element: <List />,
+      },
+   
     ]
   }
 ]);
